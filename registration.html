@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Registration Form</title>
+    <style>
+        .back {
+            background-image: url("image.jpg");
+            background-position: center;
+            background-size: cover;
+            position: relative;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="back">
+        <form>
+            <h1 style="text-align: center; color : red">Registration Form</h1>
+            <hr>
+            <label>
+                <b>Enter Your Details Below:</b>
+            </label>
+            <ul>
+                <li>
+                    Enter Your First Name* :-
+                    <input type="firstname" required>
+                </li>
+                <br>
+                <li>
+                    Enter Your Last Name :-
+                    <input type="lastname">
+                </li>
+                <br>
+                <li>
+                    Enter Your Phone Number* :-
+                    <input type="number" required>
+                </li>
+                <br>
+                <li>
+                    Gender :-
+                    <input type="radio" name="gender">Male
+                    <input type="radio" name="gender">Female
+                    <input type="radio" name="gender">Other
+                </li>
+                <br>
+                <li>
+                    Enter Date of Birth* :-
+                    <input type="date" min="1996-12-31" required>
+                </li>
+                <br>
+                <li>
+                    Select Qualification :-
+                    <input type="radio">10th
+                    <input type="radio">12th
+                    <input type="radio">Graduate
+                    <input type="radio">Post Graduate
+                </li>
+                <br>
+                <li>
+                    Select City :-
+                    <select>
+                        <option value="Delhi" value="delhi">Delhi</option>
+                        <option value="Mumbai" value="mumbai">Mumbai</option>
+                        <option value="Haryana" value="haryana">Haryana</option>
+                        <option value="Punjab" value="punjab">Punjab</option>
+                        <option value="Rajasthan" value="rajasthan">Rajasthan</option>
+                    </select>
+                </li>
+                <br>
+                <li>
+                    Enter Your Address :-
+                    <textarea name="address" style="text-align: center;" rows="1px" cols="50px">Flat No.</textarea>
+                    <br>
+                    <textarea name="address" style="text-align: center; margin-left: 153px;" rows="1px"
+                        cols="50px">Road name, Area, COlony</textarea>
+                </li>
+                <br>
+                <li>
+                    Enter Your Email-ID* :-
+                    <input type="text" placeholder="xyz@gmail.com" required>
+                </li>
+                <br>
+                <li>
+                    Enter Your Password* :-
+                    <input type="password" placeholder="password" required>
+                </li>
+            </ul>
+            <input type="Submit">
+            <input type="Reset">
+    </div>
+    </form>
+</body>
